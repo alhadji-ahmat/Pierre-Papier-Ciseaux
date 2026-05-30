@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Pierre Papier Ciseaux </title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="manifest.json">
+</head>  
+
+<body>
+
+  <div id="startScreen">
+    <h1>⏳ Loading...</h1>
+  </div>
+  
+  <div id="startScreen">
+
+    <h1>🎮 Pierre Papier Ciseaux</h1>
+
+    <button onclick="startGame()">
+      ▶ START
+    </button>
+
+    <button onclick="alert('2 joueurs bientot 😎')">
+      👥 2 JOUEURS
+    </button>
+
+    <button id="hardBtn">Click
+      🧠 MODE DIFFICILE : OFF
+  </button>
+
+  </div>
+
+  <div class="game" 
+    id="gameBox" 
+    style="display: none;">
+
+    <h1>Pierre Papier Ciseaux</h1>
+
+    <div class="buttons">
+
+      <button onclick="play('Pierre')">
+        Pierre
+      </button>
+
+      <button onclick="play('Papier')">
+        Papier
+      </button>
+
+      <button onclick="play('Ciseaux')">
+        Ciseaux
+      </button>
+
+  </div>
+
+  <h2 id="choices">
+    "❔ VS ❔";
+  </h2>
+
+  <h2 id="result">
+    Choisis une option
+  </h2>
+
+  <h3 id="score">
+    joueur : 0 | PC : 0
+  </h3>
+
+  <h1 id="gameOver"></h1>
+
+  <button onclick="restartGame()">
+    🔄 Rejouer
+  </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
